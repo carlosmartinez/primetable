@@ -10,10 +10,12 @@ class PrimeGenerator
   private
 
   def primes
-    pool = (2..1000).to_a
-    pool.map do |i| 
-      (i*2 .. pool.max).step(i).each {|j| pool.delete j}
-      i      
+    @primes ||= begin
+      pool = (2..1000).to_a
+      pool.map do |i| 
+        (i*2 .. pool.max).step(i).each {|j| pool.delete j}
+        i      
+      end
     end
   end
 
