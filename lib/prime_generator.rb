@@ -1,6 +1,10 @@
 class PrimeGenerator
-  def prime(i)
-    primes[i-1]
+  def prime(n)
+    primes[n-1]
+  end
+
+  def first_primes(n)
+    primes[0..n-1]
   end
 
   private

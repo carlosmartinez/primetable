@@ -28,4 +28,8 @@ describe PrimeGenerator do
     expect(prime_generator.prime(100)).to eq 541
   end
 
+  it "returns first 10 primes" do 
+    expect(prime_generator.first_primes(10)).to eq [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+  end
+
 end
