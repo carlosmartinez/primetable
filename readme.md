@@ -11,4 +11,3 @@ NB. I didn't want to spend more than two hours on this, and therefore took the f
 
 - I didn't bother with custom formatting, and just went with hirb's out-the-box table formatting.
 - Normally speaking I'd abstract out the UI (the console) and have a testable formatter.
-- The implementation of prime numbers is pretty naive, and breaks above 100 or so. 
